@@ -7,7 +7,7 @@ using namespace std;
 class hashmap{
 
   private:
-    static const int tableSize;
+    int tableSize;
     struct Student {
       char firstName[20];
       char lastName[20];
