@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class hash{
+class hashmap{
 
   public:
     int Hash(char* key);
