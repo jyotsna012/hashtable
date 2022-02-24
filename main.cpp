@@ -39,7 +39,7 @@ for(int i =0; i < oldtablesize; i++){
   char newlastName[80];
   int newid;
   float newgpa;
-  if(HashTable[index] -> studentId != 0){
+  if(Hashy[i] -> studentId != 0){
     strcpy(Hashy[i]->newfirstName, firstName);  
     strcpy(Hashy[i]->newlastName, lastName);  
     newid = Hashy[i] -> studentId;
