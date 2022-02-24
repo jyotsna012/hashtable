@@ -34,7 +34,7 @@ void rehash(int tablesize, hashmap Hashy){
 int oldtablesize = tablesize;
 tablesize = tablesize+tablesize;
 hashmap HashyTwo(tablesize);
-for(i =0; i < oldtablesize; i++){
+for(int i =0; i < oldtablesize; i++){
   char newfirstName[80];
   char newlastName[80];
   int newid;
