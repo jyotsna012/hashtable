@@ -15,8 +15,7 @@ class hashmap{
       float GPA;
       Student* next;
     };
-  
-    Student* HashTable[tableSize];
+ 
   
   public:
     hashmap(int tableSize);
@@ -24,4 +23,5 @@ class hashmap{
     void addStudent(char* firstName, char* lastName, int studentId, float GPA);
     int numItemsIndex(int index);
     void print();
+    Student* HashTable[tableSize];
 };
