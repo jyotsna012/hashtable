@@ -22,7 +22,7 @@ hashmap::hashmap(){
 void hashmap::addStudent(char* firstName, char* lastName, int studentId, float GPA){
   
   int index = Hash(firstName);
-  if(HashTable[index] -> firstName == "empty"){
+  if(HashTable[index] -> studentId == 0){
     strcpy(HashTable[index]->firstName, firstName);  
     strcpy(HashTable[index]->lastName, lastName);  
     HashTable[index] -> studentId = studentId;
@@ -50,7 +50,7 @@ void hashmap::addStudent(char* firstName, char* lastName, int studentId, float G
 
 int hashmap::numItemsIndex(int index){
   int count = 0;
-  if(HashTable[index] -> name == "empty"){
+  if(HashTable[index] -> studentId == 0){
     return 0;
   }
   
