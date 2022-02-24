@@ -11,6 +11,10 @@ int hashmap::Hash(char* key){
   int index;
   
   index = strlen(key);
+  
+  
+  cout << "key[0] = " << key[0] << endl;
+  cout << "key[0] int = " << int(key[0]) << endl;
 
   return index;
   
