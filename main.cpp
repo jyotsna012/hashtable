@@ -6,7 +6,10 @@
 
 using namespace std;
 
+void rehash(int tablesize, hashmap Hashy);
+
 int main(){
+  cout << "--------------------HASHY 1----------------------------" << endl;
   int tablesize;
   tablesize = 100;
   hashmap Hashy(tablesize);
@@ -23,12 +26,27 @@ int main(){
   Hashy.addStudent("Susan", "Water", 12, 2.123);
   Hashy.addStudent("Joe", "Green Tea", 13, 3.123); 
   Hashy.print();
+  cout << "--------------------HASHY 2----------------------------" << endl;
+  rehash(tablesize, Hashy);
 }
 
-void rehash(int tablesize){
-
+void rehash(int tablesize, hashmap Hashy){
+int oldtablesize = tablesize;
 tablesize = tablesize+tablesize;
-hashmap HashyTwo(tablesize);	
-
-
+hashmap HashyTwo(tablesize);
+for(i =0; i < oldtablesize; i++){
+  char newfirstName[80];
+  char newlastName[80];
+  int newid;
+  float newgpa;
+  Student newnext;
+  if(HashTable[index] -> studentId != 0){
+    strcpy(Hashy[i]->newfirstName, firstName);  
+    strcpy(Hashy[i]->newlastName, lastName);  
+    newid = Hashy[i] -> studentId;
+    newgpa = Hashy[i] -> GPA;
+    HashyTwo.addStudent(newfirstName, newlastName, newid, newnext); 
+  }
+}
+   HashyTwo.print();
 }
