@@ -8,10 +8,10 @@ using namespace std;
 
 int main(){
   
+  int index;
   char name[] = "Hello"; 
   hashmap hashObj;
   index = hashObj.Hash(name);
-  
   cout <<"index: " << index;
 
 }
