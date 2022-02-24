@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int hash::Hash(char* key){
+int hashmap::Hash(char* key){
   int hash = 0;
   int index;
   
