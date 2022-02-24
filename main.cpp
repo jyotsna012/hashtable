@@ -39,13 +39,12 @@ for(int i =0; i < oldtablesize; i++){
   char newlastName[80];
   int newid;
   float newgpa;
-  Student newnext;
   if(HashTable[index] -> studentId != 0){
     strcpy(Hashy[i]->newfirstName, firstName);  
     strcpy(Hashy[i]->newlastName, lastName);  
     newid = Hashy[i] -> studentId;
     newgpa = Hashy[i] -> GPA;
-    HashyTwo.addStudent(newfirstName, newlastName, newid, newnext); 
+    HashyTwo.addStudent(newfirstName, newlastName, newid, newgpa); 
   }
 }
    HashyTwo.print();
