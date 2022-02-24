@@ -48,7 +48,7 @@ void hashmap::addStudent(char* firstName, char* lastName, int studentId, float G
   }
 }
 
-int hash::numItemsIndex(int index){
+int hashmap::numItemsIndex(int index){
   int count = 0;
   if(HashTable[index] -> name == "empty"){
     return 0;
@@ -66,7 +66,7 @@ int hash::numItemsIndex(int index){
 }
 
 
-void hash::print(){
+void hashmap::print(){
 
   int number;
   for(int i = 0; i < tableSize; i++){
