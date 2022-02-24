@@ -73,11 +73,11 @@ void hashmap::print(){
     number = numItemsIndex(i);
     cout << "-----------------" << endl;
     cout << "index = " << i << endl;
-    cout << HashTable[i]->firstName;  
-    cout << HashTable[i]->lastName;  
-    cout << HashTable[i]->studentId;
-    cout << HashTable[i]->GPA;
-    cout << HashTable[i]->next;
+    cout << HashTable[i]->firstName<< endl;  
+    cout << HashTable[i]->lastName<< endl;  
+    cout << HashTable[i]->studentId<< endl;
+    cout << HashTable[i]->GPA<< endl;
+    cout << HashTable[i]->next<< endl;
     cout << "number of items = " << number << endl;
     cout << "-----------------" << endl;  
   }
