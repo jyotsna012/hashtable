@@ -7,7 +7,7 @@ using namespace std;
 class hashmap{
 
   private:
-    static const int tableSize = 10;
+    int tableSize;
     struct Student {
       char firstName[20];
       char lastName[20];
@@ -19,7 +19,7 @@ class hashmap{
     Student* HashTable[tableSize];
   
   public:
-    hashmap();
+    hashmap(int tableSize);
     int Hash(char* key);
     void addStudent(char* firstName, char* lastName, int studentId, float GPA);
     int numItemsIndex(int index);
