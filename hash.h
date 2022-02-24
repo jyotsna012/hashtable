@@ -13,10 +13,10 @@ class hashmap{
       char lastName[20];
       int studentId;
       float GPA;
-      student* next;
+      Student* next;
     };
   
-    item* HashTable[tableSize];
+    Student* HashTable[tableSize];
   
   public:
     hashmap();
