@@ -7,7 +7,7 @@
 using namespace std;
 
 hashmap::hashmap(){
-  char emptys[] = "empty;
+  char emptys[] = "empty";
   for(int i =-; i < tableSize; i++){
     HashTable[i] = new Student;
     HashTable[i] -> strcpy(firstName, emptys);  
