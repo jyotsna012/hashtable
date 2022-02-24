@@ -48,6 +48,41 @@ void hashmap::addStudent(char* firstName, char* lastName, int studentId, float G
   }
 }
 
+int hash::numItemsIndex(int index){
+  int count = 0;
+  if(HashTable[index] -> name == "empty"){
+    return 0;
+  }
+  
+  else{
+  
+    count ++;
+    Student* ptr = HashTable[index];
+    while(ptr -> != NULL){
+        count ++;
+        ptr = ptr -> next;
+    }
+  }
+}
+
+
+void hash::print(){
+
+  int number;
+  for(int i = 0; i < tableSize; i++){
+    number = numItemsIndex(i);
+    cout << "-----------------" << endl;
+    cout << "index = " << i << endl;
+    cout << HashTable[index]->firstName;  
+    cout << HashTable[index]->lastName;  
+    cout << HashTable[index]->studentId;
+    cout << HashTable[index]->GPA;
+    cout << HashTable[index]->next;
+    cout << "number of items = " << number << endl;
+    cout << "-----------------" << endl;  
+  }
+
+}
 
 int hashmap::Hash(char* key){
   int hash = 0;
