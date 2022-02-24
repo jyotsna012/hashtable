@@ -46,6 +46,11 @@ void hashmap::addStudent(char* firstName, char* lastName, int studentId, float G
     ptr -> next = n;
   
   }
+  
+  if(numItemsIndex(index) >= 4){
+
+    cout << "needs to be rehased" << endl;
+  }
 }
 
 int hashmap::numItemsIndex(int index){
