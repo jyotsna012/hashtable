@@ -40,8 +40,8 @@ for(int i =0; i < oldtablesize; i++){
   int newid;
   float newgpa;
   if(Hashy[i] -> studentId != 0){
-    strcpy(Hashy[i]->newfirstName, firstName);  
-    strcpy(Hashy[i]->newlastName, lastName);  
+    strcpy(newfirstName, Hashy[i]-> firstName);  
+    strcpy(newlastName, Hashy[i]->lastName);  
     newid = Hashy[i] -> studentId;
     newgpa = Hashy[i] -> GPA;
     HashyTwo.addStudent(newfirstName, newlastName, newid, newgpa); 
