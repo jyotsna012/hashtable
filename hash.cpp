@@ -19,6 +19,7 @@ int hashmap::Hash(char* key){
   
   for(int i =0; i < strlen(key); i++){
     hash = hash + (int)key[i];
+    cout << "hash = " << hash << endl;
   }
   
   index = hash % tableSize;
