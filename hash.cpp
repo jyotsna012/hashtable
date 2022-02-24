@@ -62,9 +62,8 @@ int hashmap::numItemsIndex(int index){
         count ++;
         ptr = ptr -> next;
     }
+    return count;
   }
-  
-  return count;
 }
 
 
