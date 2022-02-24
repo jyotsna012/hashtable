@@ -77,7 +77,6 @@ void hashmap::print(){
     cout << HashTable[i]->lastName<< endl;  
     cout << HashTable[i]->studentId<< endl;
     cout << HashTable[i]->GPA<< endl;
-    cout << HashTable[i]->next<< endl;
     cout << "number of items = " << number << endl;
     cout << "-----------------" << endl;  
   }
