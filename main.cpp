@@ -9,7 +9,7 @@ using namespace std;
 int main(){
   
   char name[] = "Hello"; 
-  hash hashObj;
+  hashmap hashObj;
   index = hashObj.Hash(name);
   
   cout <<"index: " << index;
