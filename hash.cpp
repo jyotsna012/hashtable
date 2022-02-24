@@ -50,7 +50,6 @@ void hashmap::addStudent(char* firstName, char* lastName, int studentId, float G
 
 int hashmap::numItemsIndex(int index){
   cout << "----------------" << index << "-----------------" << endl;
-  int count = 0;
   if(HashTable[index] -> studentId == 0){
     return 0;
   }
@@ -62,9 +61,10 @@ int hashmap::numItemsIndex(int index){
     while(ptr -> next != NULL){
         count ++;
         ptr = ptr -> next;
-        cout << count << endl;
     }
   }
+  
+  return count;
 }
 
 
