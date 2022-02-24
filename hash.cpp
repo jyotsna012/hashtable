@@ -58,7 +58,7 @@ int hashmap::numItemsIndex(int index){
   
     count ++;
     Student* ptr = HashTable[index];
-    while(ptr -> != NULL){
+    while(ptr -> next != NULL){
         count ++;
         ptr = ptr -> next;
     }
