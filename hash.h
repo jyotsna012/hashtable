@@ -21,6 +21,7 @@ class hashmap{
   public:
     hashmap();
     int Hash(char* key);
+    void addStudent(char* firstName, char* lastName, int studentId, float GPA);
 
 
 
