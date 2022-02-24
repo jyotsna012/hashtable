@@ -8,7 +8,7 @@ using namespace std;
 
 int main(){
   hashmap Hashy;
-  Hashy.PrintTable();
+  Hashy.print();
 }
 
 
