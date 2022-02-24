@@ -8,11 +8,11 @@ using namespace std;
 
 hashmap::hashmap(){
   char emptys[] = "empty";
-  for(int i =-; i < tableSize; i++){
+  for(int i = 0; i < tableSize; i++){
     HashTable[i] = new Student;
-    HashTable[i] -> strcpy(firstName, emptys);  
-    HashTable[i] -> strcpy(lastName, emptys);  
-    HashTable[i] -> studentID = 0;
+    strcpy(HashTable[i]->firstName, emptys);  
+    strcpy(HashTable[i]->lastName, emptys);  
+    HashTable[i] -> studentId = 0;
     HashTable[i] -> GPA = 0.00;
     HashTable[i] -> next = NULL;
   }
