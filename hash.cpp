@@ -6,16 +6,22 @@
 
 using namespace std;
 
+hashmap::hashmap(){
+  tableSize = 10;
+
+}
+
 int hashmap::Hash(char* key){
   int hash = 0;
   int index;
   
   index = strlen(key);
   
+  for(int i =0; i < strlen(key); i++){
+    hash = hash + (int)key[i];
+  }
   
-  cout << "key[0] = " << key[0] << endl;
-  cout << "key[0] int = " << int(key[0]) << endl;
-
+  index = hash % tableSize;
   return index;
   
 }
