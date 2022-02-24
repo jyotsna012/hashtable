@@ -61,6 +61,7 @@ int hashmap::numItemsIndex(int index){
     while(ptr -> next != NULL){
         count ++;
         ptr = ptr -> next;
+        cout << count << endl;
     }
   }
 }
