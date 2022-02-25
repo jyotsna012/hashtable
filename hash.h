@@ -5,8 +5,8 @@
 using namespace std;
 
 class hashmap{
-
-  private:
+public:
+  //private:
     int tableSize;
     struct Student {
       char firstName[20];
@@ -17,7 +17,7 @@ class hashmap{
     };
  
   
-  public:
+  //public:
     hashmap(int tableSize);
     int Hash(char* key);
     void addStudent(char* firstName, char* lastName, int studentId, float GPA);
