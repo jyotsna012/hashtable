@@ -4,10 +4,11 @@
 
 using namespace std;
 
+int tableSize;
+
 class hashmap{
 public:
   //private:
-    int tableSize;
     struct Student {
       char firstName[20];
       char lastName[20];
