@@ -6,8 +6,8 @@
 
 using namespace std;
 
-hashmap::hashmap(int tableSize){
-  tableSize = tableSize;
+hashmap::hashmap(int ntableSize){
+  tableSize = ntableSize;
   char emptys[] = "empty";
   for(int i = 0; i < tableSize; i++){
     HashTable[i] = new Student;
