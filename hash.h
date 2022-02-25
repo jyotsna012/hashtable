@@ -8,7 +8,7 @@ using namespace std;
 class hashmap{
 public:
   //private:
-    struct *Student {
+    struct Student {
       char firstName[20];
       char lastName[20];
       int studentId;
