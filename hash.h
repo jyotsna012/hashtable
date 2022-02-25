@@ -8,7 +8,7 @@ using namespace std;
 class hashmap{
 public:
   //private:
-    struct Student {
+    struct *Student {
       char firstName[20];
       char lastName[20];
       int studentId;
@@ -24,6 +24,7 @@ public:
     void addStudent(char* firstName, char* lastName, int studentId, float GPA);
     int numItemsIndex(int index);
     void print();
-    Student* HashTable;
+    //Student* HashTable[tableSize];
+
 };
 
