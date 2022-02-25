@@ -17,7 +17,7 @@ hashmap::hashmap(int tableSize){
     HashTable[i] -> next = NULL;
   }
   tableSize = 100;
-    Student* HashTable[tableSize];
+  Student* HashTable[tableSize];
 }
 
 void hashmap::addStudent(char* firstName, char* lastName, int studentId, float GPA){
