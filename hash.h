@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int tableSize = 100;
+const static int tableSize;
 
 class hashmap{
 public:
