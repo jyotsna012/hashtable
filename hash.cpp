@@ -7,6 +7,7 @@
 using namespace std;
 
 hashmap::hashmap(int tableSize){
+  tableSize = tableSize;
   char emptys[] = "empty";
   for(int i = 0; i < tableSize; i++){
     HashTable[i] = new Student;
@@ -16,7 +17,6 @@ hashmap::hashmap(int tableSize){
     HashTable[i] -> GPA = 0.00;
     HashTable[i] -> next = NULL;
   }
-  tableSize = 100;
 }
 
 void hashmap::addStudent(char* firstName, char* lastName, int studentId, float GPA){
