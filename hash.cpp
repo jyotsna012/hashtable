@@ -6,7 +6,7 @@
 
 using namespace std;
 
-hashmap::hashmap(int tableSize){
+hashmap::hashmap(int tableSize, Student* HashTable){
   char emptys[] = "empty";
   for(int i = 0; i < tableSize; i++){
     HashTable[i] = new Student;
@@ -19,7 +19,7 @@ hashmap::hashmap(int tableSize){
   tableSize = 100;
 }
 
-void hashmap::addStudent(char* firstName, char* lastName, int studentId, float GPA){
+void hashmap::addStudent(char* firstName, char* lastName, int studentId, float GPA, Student* HashTable){
   
   int index = Hash(firstName);
   if(HashTable[index] -> studentId == 0){
@@ -53,7 +53,7 @@ void hashmap::addStudent(char* firstName, char* lastName, int studentId, float G
   }
 }
 
-int hashmap::numItemsIndex(int index){
+int hashmap::numItemsIndex(int index, Student* HashTable){
   int count = 0;
   if(HashTable[index] -> studentId == 0){
     return 0;
@@ -72,7 +72,7 @@ int hashmap::numItemsIndex(int index){
 }
 
 
-void hashmap::print(){
+void hashmap::print(Student* HashTable){
 
   int number;
   for(int i = 0; i < tableSize; i++){
