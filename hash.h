@@ -24,6 +24,6 @@ public:
     void addStudent(char* firstName, char* lastName, int studentId, float GPA);
     int numItemsIndex(int index);
     void print();
-    Student* HashTable[tableSize];
+    Student* HashTable;
 };
 
