@@ -18,7 +18,7 @@ public:
  
   
   //public:
-    const static int tableSize;
+    int tableSize;
     hashmap(int tableSize);
     int Hash(char* key);
     void addStudent(char* firstName, char* lastName, int studentId, float GPA);
