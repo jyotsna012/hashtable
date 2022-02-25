@@ -9,7 +9,7 @@ using namespace std;
 hashmap::hashmap(int tableSize){
   char emptys[] = "empty";
   for(int i = 0; i < tableSize; i++){
-    HashTable[i] = new Student*;
+    HashTable[i] = new &Student;
     strcpy(HashTable[i]->firstName, emptys);  
     strcpy(HashTable[i]->lastName, emptys);  
     HashTable[i] -> studentId = 0;
