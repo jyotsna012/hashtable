@@ -4,7 +4,6 @@
 
 using namespace std;
 
-const static int tableSize;
 
 class hashmap{
 public:
@@ -19,6 +18,7 @@ public:
  
   
   //public:
+    const static int tableSize;
     hashmap(int tableSize);
     int Hash(char* key);
     void addStudent(char* firstName, char* lastName, int studentId, float GPA);
