@@ -18,10 +18,11 @@ public:
  
   
   //public:
-    hashmap(int tableSize);
+    hashmap(int tableSize, Student* HashTable);
     int Hash(char* key);
-    void addStudent(char* firstName, char* lastName, int studentId, float GPA);
-    int numItemsIndex(int index);
-    void print();
-    Student* HashTable = new Student[tableSize];
+    void addStudent(char* firstName, char* lastName, int studentId, float GPA, Student* HashTable);
+    int numItemsIndex(int index, Student* HashTable);
+    void print(Student* HashTable);
 };
+
+    Student* HashTable[tableSize];
