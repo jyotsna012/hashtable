@@ -27,10 +27,10 @@ int main(){
   Hashy.addStudent("Joe", "Green Tea", 13, 3.123); 
   Hashy.print();
   cout << "--------------------HASHY 2----------------------------" << endl;
-  rehash(tablesize, Hashy);
+  //rehash(tablesize, Hashy);
 }
 
-void rehash(int tablesize, hashmap Hashy){
+/*void rehash(int tablesize, hashmap Hashy){
 int oldtablesize = tablesize;
 tablesize = tablesize+tablesize;
 hashmap HashyTwo(tablesize);
@@ -48,4 +48,4 @@ for(int i =0; i < oldtablesize; i++){
   }
 }
    HashyTwo.print();
-}
+}*/
